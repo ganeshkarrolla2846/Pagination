@@ -12,7 +12,7 @@ const HomePage = () => {
         const response = await fetch(`https://dummyjson.com/products?limit=10&skip=${(page - 1) * 10}`);
 
         const data = await response.json();
-        console.log(data);
+        //console.log(data);
         if(data.products)
         {
             setProducts(data.products);
